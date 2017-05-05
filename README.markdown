@@ -613,7 +613,7 @@ You can use a method to add needed columns with default names:
 ```php
 Schema::create('table', function (Blueprint $table) {
     ...
-    NestedSet::columns($table);
+    \Kalnoy\Nestedset\NestedSet::columns($table);
 });
 ```
 
@@ -621,7 +621,7 @@ To drop columns:
 
 ```php
 Schema::table('table', function (Blueprint $table) {
-    NestedSet::dropColumns($table);
+    \Kalnoy\Nestedset\NestedSet::dropColumns($table);
 });
 ```
 
